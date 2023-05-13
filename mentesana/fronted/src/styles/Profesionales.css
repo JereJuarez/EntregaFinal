@@ -1,0 +1,29 @@
+.profesionales-container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+  }
+  
+  .titulo {
+    text-align: center;
+  }
+  
+  .profesional-card {
+    background-color: #f9f9f9;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    padding: 20px;
+    margin-bottom: 20px;
+  }
+  
+  .nombre {
+    font-size: 24px;
+    color: #333;
+    margin-bottom: 10px;
+  }
+  
+  .info {
+    font-size: 16px;
+    color: #666;
+    margin-bottom: 5px;
+  }

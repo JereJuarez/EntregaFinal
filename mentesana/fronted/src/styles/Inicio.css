@@ -1,0 +1,59 @@
+.bienvenidos {
+    width: 75%;
+    padding-right: 10px;
+    box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  text-align: center;
+}
+
+h1 {
+  color: #333;
+}
+
+p {
+  color: #777;
+}
+
+.image-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 50px;
+}
+
+.image-box {
+  margin: 20px;
+  text-align: center;
+}
+
+.image-box img {
+  width: 200px;
+  height: 200px;
+}
+
+.image-box h2 {
+  margin-top: 10px;
+  font-size: 18px;
+}
+
+.image-box p {
+  margin-top: 5px;
+  font-size: 14px;
+}
+
+.link-button {
+  display: inline-block;
+  padding: 10px 20px;
+  margin-top: 20px;
+  background-color: #333;
+  color: #fff;
+  text-decoration: none;
+  font-size: 16px;
+  border-radius: 5px;
+}
+
+
+/* agregar los diseños dependiendo de lo que quiera colocar en esta página*/
