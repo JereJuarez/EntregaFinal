@@ -13,7 +13,7 @@ import Profesionales from './pages/Profesionales';
 import Psicoeducacion from './pages/Psicoeducacion';
 import Chat from './pages/Chat';
 import Acerca from './pages/Acerca';
-
+import NovedadesPage from './pages/NovedadesPage';
 
 
 
@@ -30,6 +30,7 @@ import Psicoanalisis from './pages/psicoeducacion/Psicoanalisis';
 
 
 function App() {
+  
   return (
     <div className="App">
       <Header/>
@@ -51,6 +52,7 @@ function App() {
           <Route path="acerca" element={<Acerca />} />
           <Route path="profesionales" element={<Profesionales />} />
           <Route path="chat" element={<Chat />} />
+          <Route path="publicaciones" element={<NovedadesPage />} />
 
         </Routes>
       </Router>

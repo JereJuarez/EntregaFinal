@@ -3,44 +3,44 @@ var router = express.Router();
 var usuariosModel = require('./../../models/usuariosModel');
 
 /* GET home page. */
-router.get('/', function(req, res, next) {
-    res.render('admin/login',{ //login.hbs
-        layout:'admin/layout' //layout.hbs
+router.get('/', function (req, res, next) {
+  res.render('admin/login', { //login.hbs
+    layout: 'admin/layout' //layout.hbs
   });
 });
 
-router.get('/logout', function(req, res, next) {
+router.get('/logout', function (req, res, next) {
   req.session.destroy();
-  res.render('admin/login',{ //login.hbs
-      layout:'admin/layout' //layout.hbs
-});
+  res.render('admin/login', { //login.hbs
+    layout: 'admin/layout' //layout.hbs
+  });
 });
 
 
 
 router.post('/', async (req, res, next) => {
-    try {
-        var usuario = req.body.usuario;
-        var password = req.body.password;
+  try {
+    var usuario = req.body.usuario;
+    var password = req.body.password;
 
-        var data = await usuariosModel.getUserByUsernameAndPassword(usuario, password);
+    var data = await usuariosModel.getUserByUsernameAndPassword(usuario, password);
 
 
-        if (data != undefined) {
+    if (data != undefined) {
 
-          req.session.id_usuario =data.id;
-          req.session.nombre = data.usuario;
+        req.session.id_usuario = data.id;
+        req.session.nombre = data.usuario;
 
-          res.redirect('/admin/novedades');
-        } else {
-          res.render('admin/login', {
+        res.redirect('/admin/novedades');
+    } else {
+        res.render('admin/login', {
             layout: 'admin/layout',
             error: true
-            });
-        }
-    }   catch (error) {
-        console.log(error);
+      });
     }
+  } catch (error) {
+      console.log(error);
+  }
 
 });
 

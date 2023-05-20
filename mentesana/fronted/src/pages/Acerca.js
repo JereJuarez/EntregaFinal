@@ -4,11 +4,11 @@ import '../styles/Acerca.css';
 function Acerca() {
     return (
       <div className="acerca-container">
-        <h1 className="titulo">Acerca de SanaMente</h1>
+        <h1 className="titulo">Acerca de MenteSana</h1>
         <div className="contenido">
           <div className="texto">
             <p>
-              Bienvenidos a SanaMente, un lugar dedicado a tu bienestar emocional y mental.
+              Bienvenidos a MenteSana, un lugar dedicado a tu bienestar emocional y mental.
               Nuestro objetivo es brindarte el apoyo necesario para enfrentar los desafíos
               de la vida y mejorar tu calidad de vida.
             </p>

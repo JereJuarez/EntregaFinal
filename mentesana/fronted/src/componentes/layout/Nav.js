@@ -14,10 +14,13 @@ const Nav = (props) => {
                         undefined }>Psicoeducación</ NavLink></li>
                     <li><NavLink to="/profesionales"className={({ isActive }) => isActive ? "activo":
                         undefined }>Profesionales</ NavLink></li>
+                    <li><NavLink to="/publicaciones" className={({ isActive }) => isActive ? "activo":
+                        undefined }>Publicaciones</ NavLink></li>
                     <li><NavLink to="/chat" className={({ isActive }) => isActive ? "activo":
                         undefined }>Contacto</ NavLink></li>
                     <li><NavLink to="/acerca" className={({ isActive }) => isActive ? "activo":
                         undefined }>Acerca</ NavLink></li>
+                    
               
                 </ul>
             </div>
